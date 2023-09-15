@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+
+//import logo from './AWS.png';
 import './App.css';
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
         <a
           className="App-link"
           href="https://reactjs.org"
+          //href="https://www.propelleraero.com/dirtmate/"
           target="_blank"
           rel="noopener noreferrer"
         >
