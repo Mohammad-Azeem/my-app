@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transaction Data</title>
+</head>
+
+<body>
+    <h1>Transaction Data</h1>
+    <ul>
+        {% for transaction in transactions %}
+            <li>
+                <strong>User ID:</strong> {{transaction.id}}<br>
+                <strong>Timestamp:</strong> {{transaction.timestamp}}<br>
+                <strong>Sender ID:</strong> {{transaction.sender_id}}<br>
+                <strong>Recipient ID:</strong> {{transaction.recipient_id}}<br>
+                <strong>Transaction type:</strong> {{transaction.transaction_type}}<br>
+                <strong>Amount:</strong> {{transaction.amount}}<br>
+                <strong>Status:</strong> {{transaction.status}}
+            </li>
+        {% end for %}
+    </ul> 
+</body>
+
+</html>

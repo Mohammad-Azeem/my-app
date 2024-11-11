@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>App Usage Data</title>
+</head>
+
+<body>
+    <h1>App Usage Data</h1>
+    <ul>
+        {% for appUsage in appUsages %}
+            <li>
+                <strong>User ID:</strong> {{appUsage.id}}<br>
+                <strong>Timestamp:</strong> {{appUsage.timestamp}}<br>
+                <strong>User:</strong> {{appUsage.user}}<br>
+                <strong>Usage type</strong> {{appUsage.usage_type}}<br>
+                <strong>Session start</strong> {{appUsage.session_start}}<br>
+                <strong>Session end</strong> {{appUsage.session_end}}<br>
+                <strong>Clicks</strong> {{appUsage.clicks}}<br>
+                <strong>Pages visited</strong> {{appUsage.pages_visited}}<br>
+                <strong>Device</strong> {{appUsage.device}}
+            </li>
+        {% end for %}
+    </ul>    
+</body>
+
+</html>

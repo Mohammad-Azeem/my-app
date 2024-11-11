@@ -1,0 +1,13 @@
+"""
+Run the following Django management command to create database tables based on your model definitions.
+
+These commands will generate the necessary database tables based on your model definitions.
+"""
+python manage.py makemigrations # is it necessary to write app name myApp
+python manage.py migrate
+
+
+# How do I create a Django app or model?
+# You can create a new app using python manage.py startapp app_name. To create a model, 
+# define it in the appropriate app's models.py file, and then run python manage.py 
+# makemigrations followed by python manage.py migrate to apply the changes.
